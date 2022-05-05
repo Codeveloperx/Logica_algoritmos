@@ -50,7 +50,7 @@ for (let index = 0; index < 5; index++) {
     n_muertos = prompt(`RAZAS \n1: Enanos \n2: Elfos \n3: Humanos \n4: Orcos \n5: Huargos\nIngrese la cantidad de muertos para ${muertos_raza[index]}`);
     bajas.push(Number(n_muertos));
 }
-let opcion = 0;
+let opcion = true;
 do {
     let opciones = Number(prompt("Acciones a Realizar: \n1. Buscar por codigo de raza \n2. Raza con mas muertos \n3. Raza con menos muertos"));
 
@@ -69,8 +69,7 @@ do {
             alert("OPCION NO VALIDA!")
             break;
     }
-    opcion = Number(prompt("Desea salir? false/true"));
-} while (opcion > 0);
+} while (opcion);
 
 
 
